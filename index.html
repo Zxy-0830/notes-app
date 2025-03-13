@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Xiyu Zhou">
+  <title>Notes App</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/favicon.png?v=2" type="image/png">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/app.js" defer></script>
+</head>
+    <body>
+     <div class="container">
+      <h1>Notes App</h1>
+      <form id="noteForm">
+        <div class="form-group">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+          <small class="error" id="titleError"></small>
+        </div>
+        <div class="output" id="output"></div>
+        <div class="form-group">
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" required></textarea>
+          <small class="error" id="contentError"></small>
+        </div>
+        <button type="submit" id="button">Add Note</button>
+      </form>
+      <div id="noteCount">Total Notes: 0</div>
+    </div>
+    <div id="notesContainer"></div>
+    </body>
+</html>
